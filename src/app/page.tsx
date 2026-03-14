@@ -57,65 +57,7 @@ export default function Home() {
             Honeymoon &amp; Family Trips
           </p>
         </div>
-
-        {/* Search Bar / Booking Form (Positioned at bottom) */}
-        <div className="absolute -bottom-[60px] md:-bottom-[40px] left-1/2 -translate-x-1/2 z-20 w-[90%] max-w-4xl bg-white shadow-xl rounded-lg p-4 md:p-6 border border-[#f2f2f2]">
-          <form className="flex flex-col md:flex-row items-center justify-between gap-4">
-
-            <div className="flex-1 w-full relative">
-              <label className="text-xs uppercase font-bold text-gray-500 mb-1 block">Where To</label>
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="e.g. Hunza Valley"
-                  className="w-full border-b-2 border-gray-200 py-2 pl-8 pr-2 focus:outline-none focus:border-[#a5292f] transition-colors bg-transparent text-gray-800 font-medium"
-                />
-                <svg className="w-5 h-5 absolute left-1 top-2.5 text-[#1368a5]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-              </div>
-            </div>
-
-            <div className="flex-[0.8] w-full relative">
-              <label className="text-xs uppercase font-bold text-gray-500 mb-1 block">Month</label>
-              <div className="relative">
-                <select className="w-full border-b-2 border-gray-200 py-2 pl-8 pr-2 focus:outline-none focus:border-[#a5292f] transition-colors bg-transparent text-gray-800 font-medium appearance-none cursor-pointer">
-                  <option value="">Any Month</option>
-                  <option value="jan">January</option>
-                  <option value="feb">February</option>
-                  <option value="mar">March</option>
-                  <option value="apr">April</option>
-                  <option value="may">May</option>
-                  <option value="jun">June</option>
-                  <option value="jul">July</option>
-                </select>
-                <svg className="w-5 h-5 absolute left-1 top-2.5 text-[#1368a5]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-              </div>
-            </div>
-
-            <div className="flex-[0.8] w-full relative">
-              <label className="text-xs uppercase font-bold text-gray-500 mb-1 block">Travelers</label>
-              <div className="relative">
-                <select className="w-full border-b-2 border-gray-200 py-2 pl-8 pr-2 focus:outline-none focus:border-[#a5292f] transition-colors bg-transparent text-gray-800 font-medium appearance-none cursor-pointer">
-                  <option value="1">1 Person</option>
-                  <option value="2">2 Persons</option>
-                  <option value="3">3 Persons</option>
-                  <option value="4+">4+ Persons</option>
-                </select>
-                <svg className="w-5 h-5 absolute left-1 top-2.5 text-[#1368a5]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-              </div>
-            </div>
-
-            <div className="w-full md:w-auto mt-2 md:mt-0 self-end">
-              <button type="button" className="w-full bg-[#1368a5] hover:bg-[#a5292f] text-white font-bold py-3.5 px-8 rounded transition-all duration-300 shadow-md">
-                Search Tours
-              </button>
-            </div>
-
-          </form>
-        </div>
       </section>
-
-      {/* Spacer for Search Box */}
-      <div className="h-24 md:h-20 w-full bg-[#f2f2f2]" />
 
       {/* 2. TOP DESTINATIONS SECTION */}
       <section className="w-full bg-[#f2f2f2] py-16 px-4">
