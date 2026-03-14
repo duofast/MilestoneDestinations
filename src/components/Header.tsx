@@ -54,12 +54,16 @@ const Header = () => {
               Destinations
               <svg className="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
             </button>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-48 bg-[#f2f2f2] border border-gray-200 shadow-lg rounded-b-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-              <div className="py-2 flex flex-col">
-                <Link href="/destinations#hunza" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Hunza</Link>
-                <Link href="/destinations#skardu" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Skardu</Link>
-                <Link href="/destinations#swat" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Swat</Link>
-                <Link href="/destinations#naran" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Naran Kaghan</Link>
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-56 bg-[#f2f2f2] border border-gray-200 shadow-lg rounded-b-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className="py-2 flex flex-col max-h-[400px] overflow-y-auto">
+                <Link href="/destinations/azad-kashmir-tours" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Azad Kashmir Tours</Link>
+                <Link href="/destinations/chitral-valley-tours" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Chitral Valley Tours</Link>
+                <Link href="/destinations/fairy-meadows-pakistan" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Fairy Meadows</Link>
+                <Link href="/destinations/hunza-valley-tours" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Hunza Valley Tours</Link>
+                <Link href="/destinations/murree-tours" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Murree Tours</Link>
+                <Link href="/destinations/naran-kaghan-tours" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Naran Kaghan Tours</Link>
+                <Link href="/destinations/skardu-valley-tours" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Skardu Valley Tours</Link>
+                <Link href="/destinations/swat-valley-tours" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Swat Valley Tours</Link>
               </div>
             </div>
           </div>
@@ -70,12 +74,10 @@ const Header = () => {
               Tours Type
               <svg className="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
             </button>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-48 bg-[#f2f2f2] border border-gray-200 shadow-lg rounded-b-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-56 bg-[#f2f2f2] border border-gray-200 shadow-lg rounded-b-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <div className="py-2 flex flex-col">
-                <Link href="/tours#family" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Family Tours</Link>
-                <Link href="/tours#honeymoon" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Honeymoon Tours</Link>
-                <Link href="/tours#corporate" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Corporate Tours</Link>
-                <Link href="/tours#group" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Group Tours</Link>
+                <Link href="/tours/1-day-tours" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">1 Day Tours</Link>
+                <Link href="/tours/foreigner-tours" className="px-5 py-2 text-sm font-semibold text-[#1e2024] hover:bg-white hover:text-[#a5292f] transition-colors">Foreigner Tours</Link>
               </div>
             </div>
           </div>
@@ -130,12 +132,16 @@ const Header = () => {
               Destinations
               <svg className={`w-4 h-4 transition-transform duration-200 ${openDropdown === 'destinations' ? 'rotate-180' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
             </button>
-            <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openDropdown === 'destinations' ? 'max-h-[300px] pb-3' : 'max-h-0'}`}>
+            <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openDropdown === 'destinations' ? 'max-h-[500px] pb-3' : 'max-h-0'}`}>
               <div className="bg-white px-4 py-2 flex flex-col space-y-3 rounded border border-gray-200 mt-2">
-                <Link href="/destinations#hunza" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Hunza</Link>
-                <Link href="/destinations#skardu" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Skardu</Link>
-                <Link href="/destinations#swat" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Swat</Link>
-                <Link href="/destinations#naran" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Naran Kaghan</Link>
+                <Link href="/destinations/azad-kashmir-tours" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Azad Kashmir Tours</Link>
+                <Link href="/destinations/chitral-valley-tours" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Chitral Valley Tours</Link>
+                <Link href="/destinations/fairy-meadows-pakistan" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Fairy Meadows</Link>
+                <Link href="/destinations/hunza-valley-tours" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Hunza Valley Tours</Link>
+                <Link href="/destinations/murree-tours" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Murree Tours</Link>
+                <Link href="/destinations/naran-kaghan-tours" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Naran Kaghan Tours</Link>
+                <Link href="/destinations/skardu-valley-tours" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Skardu Valley Tours</Link>
+                <Link href="/destinations/swat-valley-tours" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Swat Valley Tours</Link>
               </div>
             </div>
           </div>
@@ -151,10 +157,8 @@ const Header = () => {
             </button>
             <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openDropdown === 'tours' ? 'max-h-[300px] pb-3' : 'max-h-0'}`}>
               <div className="bg-white px-4 py-2 flex flex-col space-y-3 rounded border border-gray-200 mt-2">
-                <Link href="/tours#family" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Family Tours</Link>
-                <Link href="/tours#honeymoon" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Honeymoon Tours</Link>
-                <Link href="/tours#corporate" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Corporate Tours</Link>
-                <Link href="/tours#group" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Group Tours</Link>
+                <Link href="/tours/1-day-tours" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">1 Day Tours</Link>
+                <Link href="/tours/foreigner-tours" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-semibold text-gray-700 hover:text-[#a5292f]">Foreigner Tours</Link>
               </div>
             </div>
           </div>
